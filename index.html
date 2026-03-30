@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>🍔 QuickBite</h1>
+        <a href="cart.html">🛒 Cart</a>
+        <button onclick="toggleDarkMode()">🌙</button>
+    </nav>
+
+    <!-- Heading -->
+    <h2 style="text-align:center; margin-top:20px;">
+        Delicious Food Delivered To You 😋
+    </h2>
+    <input type="text" id="search" placeholder="Search food..." onkeyup="searchFood()" style="margin:20px; padding:10px; width:80%;">
+    <!-- Food Items -->
+    <div class="container">
+        <!-- Pizza -->
+        <div class="card food-item">
+            <img src="../images/pizza.jpg">
+            <h3>Pizza</h3>
+            <p>₹199</p>
+            <button onclick="addToCart('Pizza',199)">Add to Cart</button>
+        </div>
+
+        <!-- Burger -->
+        <div class="card food-item">
+            <img src="../images/burger.jpg">
+            <h3>Burger</h3>
+            <p>₹99</p>
+            <button onclick="addToCart('Burger',99)">Add to Cart</button>
+        </div>
+
+        <!-- Pasta -->
+        <div class="card food-item">
+            <img src="../images/pasta.jpg">
+            <h3>Pasta</h3>
+            <p>₹149</p>
+            <button onclick="addToCart('Pasta',149)">Add to Cart</button>
+        </div>
+
+        <!-- Fries -->
+        <div class="card food-item  ">
+            <img src="../images/fries.jpg">
+            <h3>Fries</h3>
+            <p>₹69</p>
+            <button onclick="addToCart('Fries',69)">Add to Cart</button>
+        </div>
+
+        <!-- Sandwich -->
+        <div class="card  food-item">
+            <img src="../images/sandwich.jpg">
+            <h3>Sandwich</h3>
+            <p>₹79</p>
+            <button onclick="addToCart('Sandwich',79)">Add to Cart</button>
+        </div>
+
+        <!-- Coke -->
+        <div class="card food-item">
+            <img src="../images/coke.jpg">
+            <h3>Coke</h3>
+            <p>₹49</p>
+            <button onclick="addToCart('Coke',49)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
